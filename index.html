@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the AI Generator</h1>
+        <h1>Name AI Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="name-generator-form" action="">
           <input
             type="text"
             placeholder="Enter the topic"
@@ -20,11 +21,11 @@
             required
             autocomplete="off"
           />
-          <input type="submit" />
+          <input type="submit" value="Generate name" />
           <br />
           <br />
         </form>
-        <div class="result">The generated text will be here</div>
+        <div class="result" id="name">The generated text will be here</div>
       </main>
       <br />
       <br />
