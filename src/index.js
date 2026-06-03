@@ -17,7 +17,7 @@ function generateNames(event) {
   let prompt = `Generate 10 creative nicknames for ${userInput.value}`;
 
   let context =
-    "You are a creative nickname generator AI. Generate 10 short, stylish nicknames. Put each nickname on a new line using <br /> only. No numbers, no bullet points, no sentences, no markdown.";
+    "You are a creative nickname AI generator. Generate 10 short, stylish nicknames. Your mission is to put each generated nickname on a new line using <br /> only. No numbers, no bullet points, no sentences, no markdown.";
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
     prompt,
